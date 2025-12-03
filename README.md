@@ -58,6 +58,7 @@ Pasos para ejecutar
 
 <h2>Decisiones Técnicas</h2>
 Aunque la mayoría son requeridas en el enunciado para el desarrollo, aquí hay algunas razones de por que se usaría cada una.
+
 *   React 19 & TypeScript: Se eligió la última versión estable de React para crear componentes reutilizables y con tipado de datos.
 *   Vite: Buena velocidad en el arranque del servidor de desarrollo y compilación.
 *   Zustand: Elegido para el manejo de estado global de bajo peso y facilidad de uso.
