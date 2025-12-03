@@ -1,8 +1,8 @@
-Prueba Tecnica RBU
+<h1>Prueba Tecnica RBU</h1> 
 
 Aplicación web construida con React para la gestión de desarrolladores, proyectos y sus asignaciones.
 
-Instrucciones de Instalación y Ejecución
+<h2>Instrucciones de Instalación y Ejecución</h2>
 
 Prerrequisitos
 - Node.js: Versión 18 o superior recomendada.
@@ -37,9 +37,9 @@ Pasos para ejecutar
     npm run build
     ```
 
-Arquitectura
+<h2>Arquitectura</h2>
 
-Estructura de Directorios
+<h2>Estructura de Directorios</h2>
 
 *   src/api: Capa de Servicio. Contiene la configuración del cliente HTTP y funciones tipadas para cada endpoint del backend.
 *   src/store: Gestión de Estado. Utiliza Zustand para manejar el estado global de la aplicación (desarrolladores, proyectos, asignaciones).
@@ -48,17 +48,17 @@ Estructura de Directorios
 *   src/pages: Vistas Principales que orquestan los componentes de features.
 *   src/layouts: Define el layout principal
 
-Flujo de Datos
+<h2>Flujo de Datos</h2>
 
 1.  Interacción: El usuario interactúa con la UI
-2.  Action: El componente invoca una acción del Store de Zustand.
-3.  API Call: El Store se comunica con la capa API para persistir datos.
-4.  State Update: Tras una respuesta exitosa, el Store actualiza el estado global.
+2.  Acción: El componente invoca una acción del Store de Zustand.
+3.  Llamadas de API: El Store se comunica con la capa API para persistir datos.
+4.  Actualización de estado: Tras una respuesta exitosa, el Store actualiza el estado global.
 5.  Render: Los componentes suscritos se re-renderizan automáticamente con los nuevos datos.
 
-Decisiones Técnicas
-
-*   React 19 & TypeScript: Se eligió la última versión estable de React.
+<h2>Decisiones Técnicas</h2>
+Aunque la mayoría son requeridas en el enunciado para el desarrollo, aquí hay algunas razones de por que se usaría cada una.
+*   React 19 & TypeScript: Se eligió la última versión estable de React para crear componentes reutilizables y con tipado de datos.
 *   Vite: Buena velocidad en el arranque del servidor de desarrollo y compilación.
 *   Zustand: Elegido para el manejo de estado global de bajo peso y facilidad de uso.
 *   Tailwind CSS: Para desarrollo rápido de UI consistente y responsiva.
@@ -66,5 +66,5 @@ Decisiones Técnicas
 
 Consideraciones Adicionales
 
-*   Validaciones: Se incluyen validaciones dentro del front end pero algunas como la validación del RUT no fueron completamente implementadas. Como alternativa se podría usar modulos como "rut-utilities".
+*   Validaciones: Se incluyen validaciones dentro del frontend pero algunas, como la validación del RUT no fueron completamente implementadas. Como alternativa se podría usar modulos como "rut-utilities".
 
